@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OMNIIA One — Le quotidien de votre ville, en une plateforme</title>
+  <meta name="description" content="OMNIIA One réunit transport, paiements, marché local et messagerie dans une seule plateforme, autour d’un même portefeuille. Conçu pour les villes d’Afrique de l’Ouest." />
+  <meta name="title-fr" content="OMNIIA One — Le quotidien de votre ville, en une plateforme" />
+  <meta name="title-en" content="OMNIIA One — Your city’s daily life, one platform" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="OMNIIA One — Le quotidien de votre ville, en une plateforme" />
+  <meta property="og:description" content="Transport, paiements, marché local et messagerie — réunis par un seul portefeuille." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:url" content="https://omniia.example/" />
+
+  <!-- Données structurées Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "OMNIIA One",
+    "url": "https://omniia.example/",
+    "areaServed": ["GN"]
+  }
+  </script>
+
+  <!-- Polices Google (display=swap, anti-FOIT) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Composants web (hors React) -->
+  <script src="image-slot.js"></script>
+
+  <!-- React (builds de production, versions épinglées) -->
+  <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+
+  <!-- Modules pré-compilés (JSX déjà transpilé — aucun Babel au chargement) -->
+  <script src="i18n.js"></script>
+  <script src="icons.js"></script>
+  <script src="tweaks-panel.js"></script>
+  <script src="components.js"></script>
+  <script src="modal.js"></script>
+  <script src="home.js"></script>
+  <script src="drop.js"></script>
+  <script src="business.js"></script>
+  <script src="particuliers.js"></script>
+  <script src="marchand.js"></script>
+  <script src="chauffeur.js"></script>
+  <script src="terms.js"></script>
+  <script src="help.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
