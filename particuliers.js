@@ -52,12 +52,10 @@ function ParticuliersPage({
     type: "button",
     className: "btn btn-ghost",
     onClick: onDrop
-  }, p.hero.ctaSecondary))), React.createElement("image-slot", {
-    id: "part-hero",
-    class: "mch-hero-img",
-    shape: "rounded",
-    radius: "18",
-    placeholder: lang === "fr" ? "Photo : habitant·e utilisant OMNIIA en ville" : "Photo: a resident using OMNIIA in the city"
+  }, p.hero.ctaSecondary))), React.createElement("img", {
+    className: "mch-hero-img",
+    src: "uploads/livreur.jpg",
+    alt: lang === "fr" ? "Photo : habitant·e utilisant OMNIIA en ville" : "Photo: a resident using OMNIIA in the city"
   })), React.createElement("div", {
     className: "wrap"
   }, React.createElement("hr", {

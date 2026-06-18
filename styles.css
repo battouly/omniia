@@ -1242,6 +1242,7 @@ html[lang="en"] .step::before { content: "Step " counter(step); }
   height: clamp(380px, 42vw, 520px);
   border-radius: 18px;
   background: var(--cloth);
+  object-fit: cover;
 }
 
 /* Règle de séparation */
@@ -1314,6 +1315,7 @@ html[lang="en"] .step::before { content: "Step " counter(step); }
   height: clamp(96px, 12vw, 132px);
   border-radius: 50%;
   background: var(--cloth);
+  object-fit: cover;
 }
 .mch-quote-row {
   display: grid;
@@ -1537,6 +1539,7 @@ html[lang="en"] .step::before { content: "Step " counter(step); }
   height: clamp(380px, 42vw, 520px);
   border-radius: 18px;
   background: var(--cloth);
+  object-fit: cover;
 }
 
 /* Pourquoi — liste numérotée (titre + description à droite) */
@@ -1688,6 +1691,7 @@ html[lang="en"] .step::before { content: "Step " counter(step); }
   height: clamp(240px, 30vw, 380px);
   border-radius: 18px;
   background: var(--cloth);
+  object-fit: cover;
 }
 
 /* Que dois-je faire ? */

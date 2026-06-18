@@ -50,12 +50,10 @@ function ChauffeursPage({
     type: "button",
     className: "btn btn-ghost btn-sm",
     onClick: onDownload
-  }, c.hero.cta))), React.createElement("image-slot", {
-    id: "drv-hero",
-    class: "drv-hero-img",
-    shape: "rounded",
-    radius: "18",
-    placeholder: c.hero.photoSlot
+  }, c.hero.cta))), React.createElement("img", {
+    className: "drv-hero-img",
+    src: "uploads/driverOmniia.jpg",
+    alt: c.hero.photoSlot
   })), React.createElement("div", {
     className: "wrap"
   }, React.createElement("hr", {
@@ -88,12 +86,11 @@ function ChauffeursPage({
     id: "drv-testi-label"
   }, c.testimonial.label), React.createElement("div", {
     className: "mch-avatars"
-  }, c.testimonial.avatars.map((a, i) => React.createElement("image-slot", {
+  }, c.testimonial.avatars.map((a, i) => React.createElement("img", {
     key: i,
-    id: "drv-av" + (i + 1),
-    class: "mch-avatar",
-    shape: "circle",
-    placeholder: a
+    className: "mch-avatar",
+    src: ["uploads/Driver1.jpg", "uploads/Binta.jpg", "uploads/Dug.jpg"][i],
+    alt: a
   }))), React.createElement("div", {
     className: "mch-quote-row"
   }, React.createElement("div", {
@@ -182,12 +179,10 @@ function ChauffeursPage({
     className: "drv-apply-note"
   }, c.apply.note))), React.createElement("div", {
     className: "wrap"
-  }, React.createElement("image-slot", {
-    id: "drv-apply-photo",
-    class: "drv-apply-photo",
-    shape: "rounded",
-    radius: "18",
-    placeholder: c.apply.photoSlot
+  }, React.createElement("img", {
+    className: "drv-apply-photo",
+    src: "uploads/rentalpartner.jpg",
+    alt: c.apply.photoSlot
   })), React.createElement("section", {
     className: "wrap drv-todo",
     "aria-labelledby": "drv-todo-h2"

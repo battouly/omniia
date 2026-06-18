@@ -53,12 +53,10 @@ function MarchandPage({
     type: "button",
     className: "btn btn-ghost",
     onClick: onDownload
-  }, m.ctaSecondary))), React.createElement("image-slot", {
-    id: "mch-hero",
-    class: "mch-hero-img",
-    shape: "rounded",
-    radius: "18",
-    placeholder: m.heroSlot
+  }, m.ctaSecondary))), React.createElement("img", {
+    className: "mch-hero-img",
+    src: "uploads/Marchand.jpg",
+    alt: m.heroSlot
   })), React.createElement("div", {
     className: "wrap"
   }, React.createElement("hr", {
@@ -105,12 +103,11 @@ function MarchandPage({
     id: "mch-testi-label"
   }, m.testimonial.label), React.createElement("div", {
     className: "mch-avatars"
-  }, m.testimonial.avatars.map((a, i) => React.createElement("image-slot", {
+  }, m.testimonial.avatars.map((a, i) => React.createElement("img", {
     key: i,
-    id: "mch-av" + (i + 1),
-    class: "mch-avatar",
-    shape: "circle",
-    placeholder: a
+    className: "mch-avatar",
+    src: ["uploads/Aissata.jpg", "uploads/Joseph.jpg", "uploads/Linda.jpg"][i],
+    alt: a
   }))), React.createElement("div", {
     className: "mch-quote-row"
   }, React.createElement("div", {
